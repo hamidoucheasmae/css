@@ -1,0 +1,169 @@
+<html>
+   <head>
+      <style type = "text/css">
+         table.one {border-collapse:collapse;}
+         table.two {border-collapse:separate;}
+         
+         td.a {
+            border-style:dotted; 
+            border-width:3px; 
+            border-color:#000000; 
+            padding: 10px;
+         }
+         td.b {
+            border-style:solid; 
+            border-width:3px; 
+            border-color:#333333; 
+            padding:10px;
+         }
+      </style>
+   </head>
+
+   <body>
+      <table class = "one">
+         <caption>Collapse Border Example</caption>
+         <tr><td class = "a"> Cell A Collapse Example</td></tr>
+         <tr><td class = "b"> Cell B Collapse Example</td></tr>
+      </table>
+      <br />
+      
+      <table class = "two">
+         <caption>Separate Border Example</caption>
+         <tr><td class = "a"> Cell A Separate Example</td></tr>
+         <tr><td class = "b"> Cell B Separate Example</td></tr>
+      </table>
+
+
+      <style type = "text/css">
+        table.one {
+           border-collapse:separate;
+           width:400px;
+           border-spacing:10px;
+        }
+        table.two {
+           border-collapse:separate;
+           width:400px;
+           border-spacing:10px 50px;
+        }
+     </style>
+  </head>
+
+  <body>
+  
+     <table class = "one" border = "1">
+        <caption>Separate Border Example with border-spacing</caption>
+        <tr><td> Cell A Collapse Example</td></tr>
+        <tr><td> Cell B Collapse Example</td></tr>
+     </table>
+     <br />
+     
+     <table class = "two" border = "1">
+        <caption>Separate Border Example with border-spacing</caption>
+        <tr><td> Cell A Separate Example</td></tr>
+        <tr><td> Cell B Separate Example</td></tr>
+     </table>
+
+
+     <table style = "width:400px; border:1px solid black;">
+        <caption class = "top">
+           This caption will appear at the top
+        </caption>
+        <tr><td > Cell A</td></tr>
+        <tr><td > Cell B</td></tr>
+     </table>
+     <br />
+     
+     <table style = "width:400px; border:1px solid black;">
+        <caption class = "bottom">
+           This caption will appear at the bottom
+        </caption>
+        <tr><td > Cell A</td></tr>
+        <tr><td > Cell B</td></tr>
+     </table>
+     <br />
+     
+     <table style = "width:400px; border:1px solid black;">
+        <caption class = "left">
+           This caption will appear at the left
+        </caption>
+        <tr><td > Cell A</td></tr>
+        <tr><td > Cell B</td></tr>
+     </table>
+     <br />
+     
+     <table style = "width:400px; border:1px solid black;">
+        <caption class = "right">
+           This caption will appear at the right
+        </caption>
+        <tr><td > Cell A</td></tr>
+        <tr><td > Cell B</td></tr>
+     </table>
+
+
+     <style type = "text/css">
+        table.empty {
+           width:350px;
+           border-collapse:separate;
+           empty-cells:hide;
+        }
+        td.empty {
+           padding:5px;
+           border-style:solid;
+           border-width:1px;
+           border-color:#999999;
+        }
+     </style>
+  </head>
+
+  <body>
+  
+     <table class = "empty">
+        <tr>
+           <th></th>
+           <th>Title one</th>
+           <th>Title two</th>
+        </tr>
+     
+        <tr>
+           <th>Row Title</th>
+           <td class = "empty">value</td>
+           <td class = "empty">value</td>
+        </tr>
+     
+        <tr>
+           <th>Row Title</th>
+           <td class = "empty">value</td>
+           <td class = "empty"></td>
+        </tr>
+     </table>
+
+     <style type = "text/css">
+        table.auto {
+           table-layout: auto
+        }
+        table.fixed {
+           table-layout: fixed
+        }
+     </style>
+  </head>
+  
+  <body>
+  
+     <table class = "auto" border = "1" width = "100%">
+        <tr>
+           <td width = "20%">1000000000000000000000000000</td>
+           <td width = "40%">10000000</td>
+           <td width = "40%">100</td>
+        </tr>
+     </table>
+     <br />
+     
+     <table class = "fixed" border = "1" width = "100%">
+        <tr>
+           <td width = "20%">1000000000000000000000000000</td>
+           <td width = "40%">10000000</td>
+           <td width = "40%">100</td>
+        </tr>
+     </table>
+   </body>
+</html>
